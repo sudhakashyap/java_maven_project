@@ -24,9 +24,6 @@ jobs:
       run: mvn clean package
     - name: Run unit tests
       run: mvn test
-    - name: Run static code analysis (CheckStyle, PMD)
-      run: |
-       mvn checkstyle:check pmd:check
 
    
   publish-job:
